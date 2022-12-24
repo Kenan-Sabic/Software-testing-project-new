@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import {baseUrl, myAccount, regBtn, regMailID, regPassID, accountUrl} from '../../pageobjects/selectors';
+import {baseUrl, myAccount, regBtn, regMailID, regPassID, accountTitle} from '../../pageobjects/selectors';
 
 
 /* 1.Launch the website 
@@ -34,7 +34,7 @@ test('Registration process test', async ({ page }) => {
 
     await test.step("Click on Registracija button to register and proceed to Moj račun page", async () =>{
         await page.getByRole('button', { name: regBtn }).click();
-        await expect(page).toHaveTitle(accountUrl);
+        await expect(page).toHaveTitle(accountTitle);
         await expect(locator).toContainText('Moj račun');
         
     })

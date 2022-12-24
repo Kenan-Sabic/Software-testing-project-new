@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { accountUrl, baseUrl, loginBtn, myAccount } from '../../pageobjects/selectors';
+import { accountTitle, baseUrl, loginBtn, myAccount } from '../../pageobjects/selectors';
 
 /* 
     1. Load the page
@@ -22,7 +22,7 @@ test('test', async ({ page }) => {
 
     await test.step("Click on Login button to sign in without data", async () =>{
         await page.getByRole('button', { name: loginBtn }).click();
-        await expect(page).toHaveTitle(accountUrl);
+        await expect(page).toHaveTitle(accountTitle);
         await expect(page.getByRole('alert')).toHaveText('Greška Korisničko ime je obavezno');
         
     })
