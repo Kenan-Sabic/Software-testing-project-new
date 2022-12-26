@@ -41,6 +41,7 @@ If one wants to run entire test suite, it can be done by following command:
 ```bash
 npx playwright test 
 ```
+### Test suites
 If one wants to run a specific set of tests , it can be done by the following command:
 ```bash
 npx playwright test tests/<directory-name>/
