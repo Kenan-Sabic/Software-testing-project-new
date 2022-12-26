@@ -38,7 +38,7 @@ If one wants to run single test, it can be done by following command:
 ```bash
 npx playwright test <filename> 
 ```
-Example for popular-purchase.test.ts:
+Example for search-items.js:
 ```bash
 npx playwright test search-items.test.js
 ```
