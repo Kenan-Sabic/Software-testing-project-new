@@ -42,3 +42,7 @@ Example for search-items.js:
 ```bash
 npx playwright test search-items.test.js
 ```
+Note: some tests need to run in headed mode in order to test the site properly. If a test fails try adding --headed to the command, like this:
+```bash
+npx playwright test search-items.test.js --headed
+```
