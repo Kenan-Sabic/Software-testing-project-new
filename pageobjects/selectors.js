@@ -61,6 +61,11 @@ module.exports = {
     productName:'320,00 KM 350,00 KM Samsung Galaxy A04 64GB (4GB RAM)',
     productTitle:'Samsung Galaxy A04 64GB (4GB RAM) - univerzalno.com',
     shopTitle:'Shop - univerzalno.com',
+    invalidLoginEmail: 'Ismaraganovic69@gmail.com',
+    invalidLoginPassword: 'caminaminaee',
+    invalidRegEmail: 'ramsi', 
+    invalidRegPass: 'caminaminaee',
+
 
     contactName: '| Kontakt',
     appleServ: '#topbar-right-menu-item-114607',
