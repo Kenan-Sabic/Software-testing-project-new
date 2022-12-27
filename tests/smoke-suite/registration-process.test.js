@@ -26,7 +26,7 @@ test('Registration process test', async ({ page }) => {
     await test.step("Fill placeholders for registration (e-mail and password", async () =>{
         await page.locator(regMailID).click();
         //Note: each time test is run e-mail should be changed to non-existing one
-        await page.locator(regMailID).fill('dummy012246@gmail.com');
+        await page.locator(regMailID).fill('dummy012247@gmail.com');
         await page.locator(regPassID).click();
         await page.locator(regPassID).fill('123456789aeBd.31!');
         await page.pause();
