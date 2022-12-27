@@ -15,7 +15,7 @@ test('Search test', async ({ page }) => {
   
   await test.step("Test sorting features", async () => {
     await page.getByRole(tablist).getByRole(baseLink, { name: 'B' }).click();
-    await page.locator(divMain).filter({ hasText: filterText }).locator(filterLoc).selectOption(sixteen);
+    await page.locator('#main div').filter({ hasText: 'FiltersRezultati pretrage: “Samsung” Prikaži 16Prikaži 32Prikaži All Relevantnos' }).locator('select[name="ppp"]').selectOption('16');
     await page.goto(samsungLink);
     await page.getByRole(combobox, { name: order }).selectOption('date');
   })

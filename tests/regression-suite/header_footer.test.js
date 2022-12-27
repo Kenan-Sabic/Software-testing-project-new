@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { appleName, appleServ, baseLink, baseUrl, buttonFunc, contactName, ilidza, mainLink, mapLocator, mapLocator2, mLocation, oNama, region, servisName, viewMap, zoomIn, zoomOut } from '../../pageobjects/selectors';
+import { appleName, appleServ, baseLink, baseUrl, buttonFunc, contactName, ilidza, mainLink, mapLocator, mapLocator2, mLocation, oNama, region, servisName, viewMap, zoomIn, zoomOut, popup } from '../../pageobjects/selectors';
 
 test('Testing header and footer links', async ({ page }) => {
 
